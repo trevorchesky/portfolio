@@ -17,17 +17,17 @@ useSeoMeta({
       >
         <NuxtImg
           class="rounded-lg ring ring-black/20 md:w-30 dark:ring-white/20"
-          src="/profile_image.jpeg"
+          src="/profile_image.webp"
           alt="Profile Picture"
           lazy
         />
       </NuxtLink>
       <div>
         <h1 class="mb-2 text-4xl font-extrabold font-sans md:mb-3 sm:text-5xl">
-          Christian Preston
+          Muhammad Zahid Abdillah
         </h1>
         <p class="text-md md:text-xl">
-          I'm a Software Engineer, Gamer, Investor & Technology Enthusiast. I reside in <strong>Indianapolis, Indiana</strong> and am currently employed full-time, but I remain open to freelance opportunities.
+          Social Media Marketing | Digital Marketing | Copywriting
         </p>
       </div>
     </div>

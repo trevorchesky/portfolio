@@ -1,6 +1,6 @@
 ---
-title: AAFilters
-category: Websites
+title: Apology Email
+category: 
 description: The e-commerce site sells water and air filters. It was originally built on PEARL but has since been fully rewritten in PHP/HTML. Now Acquired by DiscountFilters.
 icon: /projects/aafilters/icon.png
 logo: /projects/aafilters/logo.png

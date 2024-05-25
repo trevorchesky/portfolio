@@ -63,7 +63,7 @@ async function submit(data: ContactForm) {
           label="Message"
           name="message"
           rows="5"
-          placeholder="Enter your message to Christian..."
+          placeholder="Enter your message..."
           validation="required"
         />
         <FormKit
