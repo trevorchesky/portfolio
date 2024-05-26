@@ -8,7 +8,7 @@ export default defineAppConfig({
     name: "Zahid's Portfolio",
     twitter: '',
     url: 'https://zahidabdillah.web.app',
-    image: 'https://christianpreston.com/site_card.png',
+    image: '',
     description:
       'Social Media Marketing | Digital Marketing | Copywriting',
   },

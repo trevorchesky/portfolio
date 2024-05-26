@@ -7,7 +7,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      link: [{ rel: 'icon', type: 'image/jpeg', href: '/favicon.jpeg' }],
+      link: [{ rel: 'icon', type: 'image/jpeg', href: '/favicon.ico' }],
     },
   },
 
@@ -68,7 +68,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: 'https://christianpreston.com',
+    url: 'https://zahidabdillah.web.app',
     name: 'Muhammad Zahid Abdillah',
     description: 'Social Media Marketing | Digital Marketing | Copywriting',
     defaultLocale: 'en',
