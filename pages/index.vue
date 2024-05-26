@@ -7,21 +7,21 @@ useSeoMeta({
 <template>
   <div class="flex flex-col">
     <div class="flex flex-col gap-2 md:flex-row md:items-center">
-      <NuxtLink
+      <!-- <NuxtLink
         class="block w-30 md:min-w-32"
         to="/cp-resume.pdf"
         target="_blank"
         @click="umTrackEvent('home:btn:clicked', {
           name: 'resume',
         })"
-      >
+      > -->
         <NuxtImg
           class="rounded-lg ring ring-black/20 md:w-30 dark:ring-white/20"
           src="/profile_image.webp"
           alt="Profile Picture"
           lazy
         />
-      </NuxtLink>
+      <!-- </NuxtLink> -->
       <div>
         <h1 class="mb-2 text-4xl font-extrabold font-sans md:mb-3 sm:text-5xl">
           Muhammad Zahid Abdillah

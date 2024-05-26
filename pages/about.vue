@@ -14,19 +14,12 @@ useSeoMeta({
       </p>
       
       <p class="text-md mb-6 md:text-lg">
-        Alright, that's enough about me! If you would like to learn more about my
-        work, please feel free to check out my
-        <NuxtLink class="underline" to="/projects">
-          projects
-        </NuxtLink>. Also, if you would like to talk to me about any business inquiries, please feel free
+        If you would like to talk to me about any business inquiries, please feel free
         to <NuxtLink class="underline" to="/contact">
           contact me
-        </NuxtLink> or connect with me on any of my social media platforms below.
+        </NuxtLink> or connect with me on my LinkedIn below.
       </p>
 
-      <h2 class="text-2xl font-bold sm:text-2xl">
-        Let's Connect
-      </h2>
       <SocialLinks class="mt-2" />
     </div>
   </div>

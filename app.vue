@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-useSeoMeta({
-  googleSiteVerification: 'sRar0M0gLALXwyv7ycuIFXRlG4e2Sly_RQNESdxZlgs',
-})
+// useSeoMeta({
+//   googleSiteVerification: 'sRar0M0gLALXwyv7ycuIFXRlG4e2Sly_RQNESdxZlgs',
+// })
 
 const { x, y } = useMouse({
   touch: false,

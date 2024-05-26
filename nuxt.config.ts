@@ -70,7 +70,7 @@ export default defineNuxtConfig({
   site: {
     url: 'https://christianpreston.com',
     name: 'Muhammad Zahid Abdillah',
-    description: 'I’m a self-taught software developer based in Indianapolis, IN, with a passion for collaboration, building, contributing, and continuous learning. Explore my portfolio and experience in web development, software engineering, and more.',
+    description: 'Social Media Marketing | Digital Marketing | Copywriting',
     defaultLocale: 'en',
   },
 

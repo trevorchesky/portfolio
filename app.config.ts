@@ -1,15 +1,15 @@
 export default defineAppConfig({
   socials: {
-    // github: 'https://github.com/cpreston321',
-    // x: 'https://x.com/christian_ggg',
-    linkedin: 'https://www.linkedin.com/in/muhammadzahidabdillah',
+    // github: '',
+    // x: '',
+    linkedin: 'https://www.linkedin.com/in/zahidabdillah',
   },
   site: {
     name: "Zahid's Portfolio",
-    twitter: '@christian_ggg',
-    url: 'https://christianpreston.com/',
+    twitter: '',
+    url: 'https://zahidabdillah.web.app',
     image: 'https://christianpreston.com/site_card.png',
     description:
-      'Christian is a self-taught Software Developer from Indianapolis, IN. I enjoy collaborating, building, contributing, and learning new things.',
+      'Social Media Marketing | Digital Marketing | Copywriting',
   },
 })

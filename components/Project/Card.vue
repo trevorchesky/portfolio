@@ -12,7 +12,7 @@ withDefaults(defineProps<ProjectCardProps>(), {
   <div
     class="w-[350px] w-full flex flex-col rounded-lg bg-white/20 ring ring-dark/10 dark:(bg-white/10 ring-white/30)"
   >
-    <a
+    <!-- <a
       class="h-46 overflow-hidden rounded-t-lg md:h-55"
       :href="project.link"
       target="_blank"
@@ -29,11 +29,13 @@ withDefaults(defineProps<ProjectCardProps>(), {
         :alt="project.name"
         lazy
       />
-    </a>
+    </a> -->
     <div class="flex flex-col p-4">
-      <ProjectTags :tags="project.tags" />
+      <!-- <ProjectTags :tags="project.tags" /> -->
       <h3 class="mb-2 text-2xl font-bold md:text-3xl">
-        {{ project.title }}
+        <a :href="project.link" target="_blank">
+          {{ project.title }}
+        </a>
       </h3>
       <p class="text-xs md:text-sm" :title="project.description">
         {{ project.description }}
