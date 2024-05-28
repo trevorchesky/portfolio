@@ -17,7 +17,12 @@ jobs:
           node-version: "20"
       # Pick your own package manager and build script
       - run: bun install
-      - run: /portfolio/ npx nuxt build --preset github_pages
+      # Set environment variables
+      - name: Set environment variables
+        env:
+          NUXT_APP_BASE_URL: "/portfolio/"
+        run: echo "NUXT_APP_BASE_URL=$NUXT_APP_BASE_URL" >> $GITHUB_ENV
+      - run: npx nuxt build --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
