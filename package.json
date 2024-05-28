@@ -5,7 +5,7 @@
   "description": "My Portfolio site - built on Nuxt 3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cpreston321/christianpreston.com"
+    "url": "https://github.com/trevorchesky/portfolio"
   },
   "scripts": {
     "build": "nuxt build",

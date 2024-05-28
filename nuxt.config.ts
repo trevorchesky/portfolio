@@ -56,6 +56,7 @@ export default defineNuxtConfig({
     // !IMPORTANT: Nuxi doesn't seem to automatically inject at runtime
     // Temporarily using process.env for now
     public: {
+      NUXT_APP_BASE_URL: process.env.NUXT_APP_BASE_URL || '/',
       umamiId: process.env.NUXT_PUBLIC_UMAMI_ID || '',
       umamiHost: process.env.NUXT_PUBLIC_UMAMI_HOST || '',
       turnstile: {
