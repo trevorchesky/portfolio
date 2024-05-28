@@ -15,8 +15,10 @@ jobs:
         with:
           node-version: "20"
       # Pick your own package manager and build script
+      - run: curl https://bun.sh/install | bash
+      - run: source /home/codespace/.bashrc
       - run: bun install
-      - run: /portfolio/ bun nuxt build --preset github_pages
+      - run: /portfolio/ npx nuxt build --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
