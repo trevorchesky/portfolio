@@ -12,12 +12,16 @@ const links: Links[] = [
     to: '/',
   },
   {
+    name: 'About',
+    to: '/about',
+  },
+  {
     name: 'Projects',
     to: '/projects',
   },
   {
-    name: 'About',
-    to: '/about',
+    name: 'Certifications',
+    to: '/certifications',
   },
   {
     name: 'Contact',

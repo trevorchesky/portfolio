@@ -19,14 +19,13 @@ function icon(name: keyof typeof socials) {
       :key="key"
     >
       <a
-        class="h-8 w-8 flex items-center justify-center rounded-2 text-xl dark:(bg-white) hover:(opacity-70)"
+        class="text-md group inline-flex items-center rounded-lg bg-black/2 px-4 py-3 text-black font-medium ring ring-black/30 hover:ring-black/70 transition duration-200 space-x-3 dark:(bg-white/10 text-white ring-white/30 hover:ring-white/70)"
         target="_blank"
         :href="url"
         :title="key"
       >
         <Icon
           :name="icon(key)"
-          color="black"
         />
       </a>
     </li>
