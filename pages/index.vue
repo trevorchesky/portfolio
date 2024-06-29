@@ -15,7 +15,7 @@ useSeoMeta({
 
 <template>
   <div class="flex flex-col px-2 md:px-0">
-    <div class="flex flex-row gap-2 md:flex-row items-center">
+    <div class="flex flex-row gap-2 mb-4 md:flex-row items-center">
       <NuxtLink class="block w-30 md:min-w-32" to="/cv zahid.pdf" target="_blank"
         @click="umTrackEvent('home:btn:clicked', { name: 'resume' })">
         <NuxtImg
@@ -28,15 +28,15 @@ useSeoMeta({
         </h1>
         <div class="flex flex-wrap mt-2">
           <span v-for="(tag, tagIndex) in profile.tags" :key="tagIndex"
-            class="hidden md:block mt-2 mr-2 mb-2 md:ml-4 px-2 py-1 rounded-md bg-dark/5 px-2 py-1 text-xs font-semibold ring ring-dark/10 dark:(bg-white/10 ring-white/15)">
+            class="hidden md:block mt-2 mr-2 mb-6 md:ml-4 px-2 py-1 rounded-md bg-dark/5 px-2 py-1 text-xs font-semibold ring ring-dark/10 dark:(bg-white/10 ring-white/15)">
             {{ tag }}
           </span>
         </div>
       </div>
     </div>
-    <div class="flex flex-wrap mt-2">
+    <div class="flex flex-wrap">
       <span v-for="(tag, tagIndex) in profile.tags" :key="tagIndex"
-        class="md:hidden mt-4 mr-2 mb-2 md:ml-4 px-2 py-1 rounded-md bg-dark/5 px-2 py-1 text-xs font-semibold ring ring-dark/10 dark:(bg-white/10 ring-white/15)">
+        class="md:hidden mr-2 mb-2 md:ml-4 px-2 py-1 rounded-md bg-dark/5 px-2 py-1 text-xs font-semibold ring ring-dark/10 dark:(bg-white/10 ring-white/15)">
         {{ tag }}
       </span>
     </div>
@@ -51,12 +51,12 @@ useSeoMeta({
         <NuxtLink
           class="text-md group inline-flex items-center rounded-lg bg-black/2 px-3 py-2 text-black font-medium ring ring-black/30 hover:ring-black/70 transition duration-200 space-x-3 dark:(bg-white/10 text-white ring-white/30 hover:ring-white/70)"
           to="/about" @click="umTrackEvent('home:btn:clicked', { name: 'about-me' })">
-          About Me
+          About
         </NuxtLink>
         <NuxtLink
           class="text-md group inline-flex items-center rounded-lg bg-black/2 px-3 py-2 text-black font-medium ring ring-black/30 hover:ring-black/70 transition duration-200 space-x-3 dark:(bg-white/10 text-white ring-white/30 hover:ring-white/70)"
           to="/projects" @click="umTrackEvent('home:btn:clicked', { name: 'my-projects' })">
-          My Projects
+          Projects
         </NuxtLink>
       </div>
 
