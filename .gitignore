@@ -10,3 +10,5 @@ node_modules
 .env.*
 dist
 .data
+.firebaserc
+firebase.json

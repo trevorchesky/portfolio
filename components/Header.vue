@@ -45,7 +45,7 @@ function toggleTheme() {
     id="header"
     class="fixed left-0 right-0 top-0 z-12 backdrop-blur-sm dark:text-white"
   >
-    <div class="mx-auto max-w-screen-lg flex flex-row justify-end p-4">
+    <div class="mx-auto max-w-screen-lg flex flex-row justify-center md:justify-end p-4">
       <nav class="flex flex-row justify-between rounded-lg p-.5 ring ring-black/20 dark:ring-white/20">
         <ul class="md:text-md flex justify-center text-xs font-bold">
           <li
