@@ -3,56 +3,45 @@ interface ProjectCardProps {
   project?: Record<string, any>
 }
 
-withDefaults(defineProps<ProjectCardProps>(), {
+const props = withDefaults(defineProps<ProjectCardProps>(), {
   project: () => ({}),
 })
 </script>
 
 <template>
   <div
-    class="w-[350px] w-full flex flex-col rounded-lg bg-white/20 ring ring-dark/10 dark:(bg-white/10 ring-white/30)"
+    class="w-[350px] w-full flex flex-col rounded-lg bg-white/20 ring ring-dark/10 dark:(bg-white/10 ring-white/30) h-full"
   >
     <a
-      class="h-46 overflow-hidden rounded-t-lg md:h-55"
-      :href="project.link"
+      class="h-46 overflow-hidden rounded-t-lg h-full"
+      :href="props.project.link"
       target="_blank"
       @click="umTrackEvent(`project:clicked`, {
-        name: project.name,
-        title: project.title,
-        link: project.link,
+        name: props.project.name,
+        title: props.project.title,
+        link: props.project.link,
       })"
     >
       <NuxtImg
         class="h-full w-full object-cover object-top transition-all duration-300 hover:scale-105"
-        :src="project.preview"
-        :title="project.name"
-        :alt="project.name"
+        :src="props.project.preview"
+        :title="props.project.name"
+        :alt="props.project.name"
         lazy
       />
     </a>
-    <div class="flex flex-col p-4">
-      <h3 class="mb-2 text-2xl font-bold md:text-3xl">
-        <a :href="project.link" target="_blank">
-          {{ project.title }}
-        </a>
-      </h3>
-      <p class="text-xs md:text-sm mb-4" :title="project.description">
-        {{ project.description }}
-      </p>
-      <ProjectTags :tags="project.tags" />
-      <a
-        :href="project.link"
-        target="_blank"
-        class="justify-end mt-2 flex flex-row text-lg hover:opacity-75"
-        :title="project.title"
-        @click="umTrackEvent(`project:clicked`, {
-          name: project.name,
-          title: project.title,
-          link: project.link,
-        })"
-      >
-        <IconCSS name="eva:external-link-fill" />
-      </a>
+    <div class="flex flex-col flex-grow justify-between p-4">
+      <div>
+        <h3 v-if="props.project.title && props.project.title.trim() !== '' && isNaN(Number(props.project.title))" class="mb-2 text-2xl font-bold">
+          <a :href="props.project.link" target="_blank">
+            {{ props.project.title }}
+          </a>
+        </h3>
+        <p class="text-xs md:text-sm mb-4 whitespace-pre-wrap" :title="props.project.description">
+          {{ props.project.description }}
+        </p>
+      </div>
+      <ProjectTags :tags="props.project.tags" class="mt-auto" />
     </div>
   </div>
 </template>

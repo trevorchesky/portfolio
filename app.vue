@@ -32,7 +32,7 @@ const cords = computed(() => {
   </BgWrapper>
 
   <!-- Footer  -->
-  <Footer />
+  <!-- <Footer /> -->
 </template>
 
 <style lang="postcss">

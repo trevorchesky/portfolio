@@ -22,7 +22,7 @@ function handleBack() {
     >
       <IconCSS name="eva:arrow-back-fill" />
     </div>
-    <h1 class="self-center text-3xl font-bold md:text-6xl sm:text-5xl">
+    <h1 class="self-center text-3xl font-bold md:text-4xl">
       <slot />
     </h1>
   </div>

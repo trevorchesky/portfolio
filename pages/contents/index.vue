@@ -1,15 +1,10 @@
 <script lang="ts" setup>
-useSeoMeta({
-  title: 'Projects',
-  description: 'These are some of my projects that I have worked on in past and present.',
-})
-
 const page = ref(1)
 const el = ref<HTMLElement>()
 const pageLimit = computed(() => page.value * 12)
 
-const { data: projects } = await useAsyncData('projects', () =>
-  queryContent('/projects')
+const { data: contents } = await useAsyncData('contents', () =>
+  queryContent('/contents')
     .sort({
       title: 1,
     })
@@ -19,16 +14,16 @@ const { data: projects } = await useAsyncData('projects', () =>
 
 <template>
   <div class="flex flex-col">
-    <PageTitle>Projects</PageTitle>
+    <h1 class="font-bold text-3xl md:text-4xl mb-6">Social Media Contents</h1>
     <div
-      v-if="projects?.length"
+      v-if="contents?.length"
       ref="el"
       class="grid-cols grid gap-4 sm:grid-cols-2"
     >
       <ProjectCard
-        v-for="project in projects"
-        :key="project.name"
-        :project="project"
+        v-for="content in contents"
+        :key="content.name"
+        :project="content"
       />
     </div>
   </div>

@@ -1,7 +1,7 @@
 export default defineAppConfig({
   socials: {
-    // github: '',
-    // x: '',
+    gmail: 'mailto:muhammadzahidabdillah@gmail.com',
+    whatsapp: 'https://wa.me/+6281934043331',
     linkedin: 'https://www.linkedin.com/in/zahidabdillah',
   },
   site: {

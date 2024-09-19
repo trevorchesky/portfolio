@@ -21,7 +21,7 @@ useSeoMeta({
 
       <p class="text-md md:text-lg">
         If you would like to talk to me about any business inquiries, please feel free to
-        contact me or connect with me on my LinkedIn below.
+        contact me or connect with me on one of my contacts below.
       </p>
 
       <SocialLinks class="mt-4 justify-end" />

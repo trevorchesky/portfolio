@@ -11,6 +11,21 @@ const profile = {
 useSeoMeta({
   title: 'Home',
 });
+
+const page = ref(1)
+const el = ref<HTMLElement>()
+const pageLimit = computed(() => page.value * 12)
+
+const { data: projects } = await useAsyncData('projects', () =>
+  queryContent('/projects')
+    .sort({
+      title: 1,
+    })
+    .limit(pageLimit.value)
+    .find())
+
+import Articles from './articles/index.vue';
+import Contents from './contents/index.vue';
 </script>
 
 <template>
@@ -63,6 +78,14 @@ useSeoMeta({
       <div class="flex justify-end">
         <SocialLinks />
       </div>
+    </div>
+
+    <div class="mt-10">
+      <Contents />
+    </div>
+
+    <div class="mt-14">
+      <Articles />
     </div>
   </div>
 </template>

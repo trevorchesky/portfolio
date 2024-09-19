@@ -2,8 +2,8 @@
 const { socials } = useAppConfig()
 
 const icons = {
-  github: 'simple-icons:github',
-  x: 'simple-icons:x',
+  gmail: 'simple-icons:gmail',
+  whatsapp: 'simple-icons:whatsapp',
   linkedin: 'simple-icons:linkedin',
 }
 
@@ -17,6 +17,7 @@ function icon(name: keyof typeof socials) {
     <li
       v-for="(url, key) in socials"
       :key="key"
+      class="hidden md:flex"
     >
       <a
         class="text-md group inline-flex items-center rounded-lg bg-black/2 px-4 py-3 text-black font-medium ring ring-black/30 hover:ring-black/70 transition duration-200 space-x-3 dark:(bg-white/10 text-white ring-white/30 hover:ring-white/70)"
@@ -24,9 +25,21 @@ function icon(name: keyof typeof socials) {
         :href="url"
         :title="key"
       >
-        <Icon
-          :name="icon(key)"
-        />
+        <Icon :name="icon(key)" />
+      </a>
+    </li>
+    <li 
+      v-for="(url, key) in socials"
+      :key="key"
+      class="md:hidden flex space-x-3"
+    >
+      <a v-if="key === 'linkedin'"
+        class="text-md group inline-flex items-center rounded-lg bg-black/2 px-4 py-3 text-black font-medium ring ring-black/30 hover:ring-black/70 transition duration-200 space-x-3 dark:(bg-white/10 text-white ring-white/30 hover:ring-white/70)"
+        target="_blank"
+        :href="url"
+        :title="key"
+      >
+        <Icon :name="icon(key)" />
       </a>
     </li>
   </ul>
